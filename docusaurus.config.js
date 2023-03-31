@@ -4,6 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const siteName = "Gerhard Maree"
 const organizationName = "gerharddev";
 const projectName = "gerharddev.github.io";
 
@@ -41,18 +42,18 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
-        },
+        // docs: {
+        //   sidebarPath: require.resolve("./sidebars.js"),
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
+        // },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -66,52 +67,35 @@ const config = {
       // Replace with your project's social card
       image: 'img/gerhard.png',
       navbar: {
-        title: 'My Bio',
+        title: `${siteName}`,
         logo: {
           alt: 'Avatar',
           src: 'img/gerhard.png',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
+          { to: '/', label: 'Home', position: 'left' },
           { to: '/blog', label: 'Blog', position: 'left' },
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+          { to: '/about', label: 'About', position: 'left' },
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Tutorial',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
           {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/gerhard-maree-90a77083',
               },
             ],
           },
@@ -129,7 +113,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Bio, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ${siteName}.`,
       },
       prism: {
         theme: lightCodeTheme,
