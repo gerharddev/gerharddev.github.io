@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgerhardbio=self.webpackChunkgerhardbio||[]).push([[8108],{5957:a=>{a.exports=JSON.parse('{"label":"hola","permalink":"/gerharddev.github.io/blog/tags/hola","allTagsPath":"/gerharddev.github.io/blog/tags","count":1}')}}]);
