@@ -6,8 +6,10 @@ tags: [about]
 
 # About
 
-I am a passionate and experienced Software Developer with 23 years of experience in the design and development of enterprise systems
+🌏 Originally from South Africa, I have lived in London and currently call Germany home. 🦁
 
-I love endurance sports and have completed multiple ironman distance triathlons and a few ultra marathons
+💻 I have over 23 years of experience designing and developing enterprise systems, and I am passionate about software development. 📚
 
-I have been a flight instructor and a skydive pilot
+🎽 In my free time, I enjoy participating in endurance sports, including multiple ironman distance triathlons and ultra marathons. 🏃‍♂️
+
+✈️ I have experience as a flight instructor and skydive pilot, which has given me a unique perspective on aviation. 👨‍✈️
