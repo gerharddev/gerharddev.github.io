@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   return (
-    <nav style={{ backgroundColor: '#f0f0f0', padding: '10px' }}>
-      <ul style={{ listStyle: 'none', display: 'flex' }}>
-        <li style={{ marginRight: '10px' }}>
+    <nav className="navbar-fixed">
+      <ul>
+        <li>
           <Link to="/">Home</Link>
         </li>
         <li>

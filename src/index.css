@@ -70,3 +70,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+nav.navbar-fixed {
+  position: fixed; /* Fix the navbar to the viewport */
+  top: 0; /* Position it at the top */
+  left: 0; /* Position it at the left edge */
+  width: 100%; /* Make it full width */
+  background-color: #f0f0f0; /* Or your desired background color */
+  z-index: 1000; /* Ensure it's on top of other content */
+  padding: 10px 0; /* Add some padding */
+}
+nav.navbar-fixed ul {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the navigation items */
+  list-style: none; /* Remove list styles */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+}
+nav.navbar-fixed ul li {
+  margin: 0 15px; /* Add spacing between items */
+}
