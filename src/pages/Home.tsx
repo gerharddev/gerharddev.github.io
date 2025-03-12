@@ -1,11 +1,11 @@
 import React from "react";
-import "./Page.css"; // Shared styles for all pages
+import "./Page.css";
 
 const Home: React.FC = () => {
   return (
     <div className="page-container">
       <h1>Welcome to Home</h1>
-      <p>This is the Home Page.</p>
+      <p>Home page under construction.</p>
     </div>
   );
 };

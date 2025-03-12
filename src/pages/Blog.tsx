@@ -1,10 +1,11 @@
 import React from 'react';
+import "./Page.css";
 
 const Blog: React.FC = () => {
   return (
-    <div style={{ padding: '20px' }}>
+    <div className="page-container">
       <h1>Blog Posts</h1>
-      <p>This is where your blog posts will go.</p>
+      <p>Under construction.</p>
     </div>
   );
 };

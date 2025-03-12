@@ -1,17 +1,13 @@
 .page-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* Center vertically */
-    align-items: center;
-    /* Center horizontally */
-    height: calc(100vh - 4rem);
-    /* Adjust based on navbar height */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: calc(100vh - 4rem); /* Adjust based on navbar height */
     width: 100%;
     text-align: center;
     padding: 2rem;
 }
-
 
 h1 {
     font-size: 36px;
