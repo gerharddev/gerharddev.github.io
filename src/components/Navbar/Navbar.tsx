@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaLinkedin,FaGithub } from "react-icons/fa"; 
 import "./Navbar.css"; // Import separate CSS file
+import avatar from "../../assets/avatar.png";
 
 const Navbar: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar: React.FC = () => {
       <div className="navbar-container">
         <div className="logo">
           <Link to="/">
-            <img src="src/assets/avatar.png" alt="Logo" />
+          <img src={avatar} alt="Logo" />
           </Link>
         </div>
         <ul className="nav-links">
