@@ -1,12 +1,12 @@
 .page-container {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    height: calc(100vh - 4rem); /* Adjust based on navbar height */
+    justify-content: center; 
+    align-items: center; 
+    height: calc(100vh - 2rem); 
     width: 100%;
     text-align: center;
-    padding: 2rem;
+    padding: 0;
     box-sizing: border-box;
     overflow: hidden; 
 }
@@ -23,7 +23,7 @@ p {
 
 .home-image {
     max-width: 100%;
-    max-height: 100vh; /* Ensure the image height does not exceed the viewport height */
+    max-height: calc(100vh - 4rem);
     height: auto;
-    margin-top: 20px;
+    margin-top: 95px;
 }

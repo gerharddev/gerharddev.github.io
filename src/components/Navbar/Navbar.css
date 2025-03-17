@@ -1,54 +1,76 @@
 .navbar {
-    background-color: #000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 0;
-    z-index: 1000;
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .logo img {
-    height: 40px;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-  }
-  
-  .nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    text-transform: lowercase;
-  }
-  
-  .nav-links li a:hover {
-    opacity: 0.7;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .social-icons a {
-    color: white;
-    font-size: 20px;
-  }
-  
-  .social-icons a:hover {
-    opacity: 0.7;
-  }
-  
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: lowercase;
+}
+
+.nav-links li a:hover {
+  opacity: 0.7;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px; /* Increase gap for better spacing */
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px; /* Increase icon size */
+  position: relative;
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
+}
+
+.social-icons a::after {
+  content: attr(data-tooltip); /* Use data-tooltip attribute for tooltips */
+  position: absolute;
+  bottom: -25px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 12px; 
+  font-weight: normal; 
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.social-icons a:hover::after {
+  opacity: 1;
+}

@@ -22,6 +22,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -31,7 +32,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto; 
+  overflow-y: auto;
 }
 
 h1 {
@@ -50,9 +51,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -63,30 +66,34 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
 }
 
 nav.navbar-fixed {
-  position: fixed; /* Fix the navbar to the viewport */
-  top: 0; /* Position it at the top */
-  left: 0; /* Position it at the left edge */
-  width: 100%; /* Make it full width */
-  background-color: #f0f0f0; /* Or your desired background color */
-  z-index: 1000; /* Ensure it's on top of other content */
-  padding: 10px 0; /* Add some padding */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  z-index: 1000;
+  padding: 10px 0;
 }
+
 nav.navbar-fixed ul {
-  display: flex; /* Use flexbox for layout */
-  justify-content: center; /* Center the navigation items */
-  list-style: none; /* Remove list styles */
-  margin: 0; /* Remove default margins */
-  padding: 0; /* Remove default padding */
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 nav.navbar-fixed ul li {
-  margin: 0 15px; /* Add spacing between items */
+  margin: 0 15px;
 }
