@@ -1,13 +1,13 @@
 import React from 'react';
 import "./Page.css";
 
-const Blog: React.FC = () => {
+const Projects: React.FC = () => {
   return (
     <div className="page-container">
-      <h1>Blog Posts</h1>
+      <h1>Projects</h1>
       <p>Under construction</p>
     </div>
   );
 };
 
-export default Blog;
+export default Projects;
