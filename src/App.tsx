@@ -47,7 +47,7 @@ function App() {
       {/* Floating Navbar */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'
         }`}>
-        <div className={`mx-auto max-w-7xl px-8 transition-all duration-300 border-2 border-gray-700 bg-gray-900/60 backdrop-blur-md shadow-lg rounded-full`}>
+        <div className={`mx-auto max-w-7xl px-8 transition-all duration-300 border-2 border-gray-700 bg-gray-900/60 backdrop-blur-md shadow-lg ${isMobileMenuOpen ? 'rounded-2xl' : 'rounded-full'}`}>
           <div className="flex items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
@@ -94,7 +94,7 @@ function App() {
 
           {/* Mobile Navigation */}
           {isMobileMenuOpen && (
-            <div className="md:hidden py-4">
+            <div className="md:hidden px-4 py-4 border-t border-gray-700">
               <div className="flex flex-col space-y-4">
                 <button onClick={() => scrollToSection('home')} className="text-left text-gray-300 hover:text-white transition-colors">Home</button>
                 <button onClick={() => scrollToSection('projects')} className="text-left text-gray-300 hover:text-white transition-colors">Projects</button>
