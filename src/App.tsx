@@ -119,26 +119,28 @@ function App() {
         <div className="max-w-7xl mx-auto">
           {/* Home Section */}
           <section id="home" className="min-h-screen flex items-center justify-center">
-            <div className="text-center">
-              <h1 className="text-5xl font-bold text-white mb-8">Hi! I'm Gerhard</h1>
-              <h3 className="text-xl text-white font-bold">Tech Enthusiast & Problem Solver</h3>
-              <br />
-              <p className="text-l text-gray-200 max-w-2xl mx-auto">
-                I've been involved in the world of software for over 25 years, and I truly love what I do! I focus on building large-scale systems, crafting robust software architectures, and ensuring seamless cloud solutions.
+            <div className="bg-white/10 backdrop-blur-md rounded-lg p-8 shadow-xl w-full max-w-5xl">
+              <div className="text-center">
+                <h1 className="text-5xl font-bold text-white mb-8">Hi! I'm Gerhard</h1>
+                <h3 className="text-xl text-white font-bold">Tech Enthusiast & Problem Solver</h3>
                 <br />
-                Currently, I'm a Lead Developer and Solutions Architect at SMS digital GmbH, where I get to play with cool tech and help drive innovation. It's all about finding smart solutions and making things work better.
-              </p>
-              <br />
-              <h3 className="text-xl text-white font-bold">What I'm Good At:</h3>
-              <div className="text-l text-gray-200 max-w-2xl mx-auto text-left">
-                ✅ <strong>Building Awesome Architectures</strong> – Using tools like C#, .NET, Python, React, and TypeScript to create scalable solutions.<br />
-                ✅ <strong>Cloud & DevOps Magic</strong> – Utilizing AWS, Azure DevOps, and GitHub for version control, CI/CD pipelines, and automation.<br />
-                ✅ <strong>Guiding & Inspiring</strong> – Mentoring teams, sharing best practices, and pushing for innovation.
+                <p className="text-l text-gray-200 max-w-4xl mx-auto">
+                  I've been involved in the world of software for over 25 years, and I truly love what I do! I focus on building large-scale systems, crafting robust software architectures, and ensuring seamless cloud solutions.
+                  <br /><br />
+                  Currently, I'm a Lead Developer and Solutions Architect at SMS digital GmbH, where I get to play with cool tech and help drive innovation. It's all about finding smart solutions and making things work better.
+                </p>
+                <br />
+                <h3 className="text-xl text-white font-bold">What I'm Good At:</h3>
+                <div className="text-l text-gray-200 max-w-4xl mx-auto text-left">
+                  ✅ <strong>Building Awesome Architectures</strong> – Using tools like C#, .NET, Python, React, and TypeScript to create scalable solutions.<br />
+                  ✅ <strong>Cloud & DevOps Magic</strong> – Utilizing AWS, Azure DevOps, and GitHub for version control, CI/CD pipelines, and automation.<br />
+                  ✅ <strong>Guiding & Inspiring</strong> – Mentoring teams, sharing best practices, and pushing for innovation.
+                </div>
+                <br />
+                <p className="text-l text-gray-200 max-w-3xl mx-auto">
+                  I'm super passionate about tackling tough challenges and creating solutions that make a real difference.
+                </p>
               </div>
-              <br />
-              <p className="text-l text-gray-200 max-w-2xl mx-auto">
-                I'm super passionate about tackling tough challenges and creating solutions that make a real difference.
-              </p>
             </div>
           </section>
 
