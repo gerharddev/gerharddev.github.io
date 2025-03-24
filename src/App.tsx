@@ -100,10 +100,10 @@ function App() {
                 <button onClick={() => scrollToSection('projects')} className="text-left text-gray-300 hover:text-white transition-colors">Projects</button>
                 <button onClick={() => scrollToSection('blog')} className="text-left text-gray-300 hover:text-white transition-colors">Blog</button>
                 <div className="flex space-x-4 pt-2">
-                  <a href="#" target="_blank" className="text-gray-300 hover:text-white transition-colors">
+                  <a href="https://github.com/gerharddev" target="_blank" className="text-gray-300 hover:text-white transition-colors">
                     <Github className="w-5 h-5" />
                   </a>
-                  <a href="#" target="_blank" className="text-gray-300 hover:text-white transition-colors">
+                  <a href="https://www.linkedin.com/in/gerhard-maree-90a77083/" target="_blank" className="text-gray-300 hover:text-white transition-colors">
                     <Linkedin className="w-5 h-5" />
                   </a>
                 </div>
