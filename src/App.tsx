@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin } from 'lucide-react';
+import backgroundImg from './assets/background03.jpg';
+import avatarImg from './assets/avatar.png';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +37,7 @@ function App() {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url("src/assets/background03.jpg")',
+          backgroundImage: `url(${backgroundImg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -52,7 +54,7 @@ function App() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <img
-                src="src/assets/avatar.png"
+                src={avatarImg}
                 alt="Avatar"
                 className="h-10 w-10 rounded-full"
               />
