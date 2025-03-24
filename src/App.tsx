@@ -36,7 +36,6 @@ function App() {
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: 'url("src/assets/background03.jpg")',
-          //backgroundImage: 'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -70,10 +69,10 @@ function App() {
 
             {/* Social Icons */}
             <div className="hidden md:flex items-center space-x-4">
-              <a href="https://github.com/gerharddev" className="text-gray-300 hover:text-white transition-colors relative" data-tooltip="Visit my GitHub">
+              <a href="https://github.com/gerharddev" target='_blank' className="text-gray-300 hover:text-white transition-colors relative" data-tooltip="Visit my GitHub">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://www.linkedin.com/in/gerhard-maree-90a77083/" className="text-gray-300 hover:text-white transition-colors" data-tooltip="Visit my LinkedIn">
+              <a href="https://www.linkedin.com/in/gerhard-maree-90a77083/" target='_blank' className="text-gray-300 hover:text-white transition-colors" data-tooltip="Visit my LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
@@ -101,10 +100,10 @@ function App() {
                 <button onClick={() => scrollToSection('projects')} className="text-left text-gray-300 hover:text-white transition-colors">Projects</button>
                 <button onClick={() => scrollToSection('blog')} className="text-left text-gray-300 hover:text-white transition-colors">Blog</button>
                 <div className="flex space-x-4 pt-2">
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                  <a href="#" target="_blank" className="text-gray-300 hover:text-white transition-colors">
                     <Github className="w-5 h-5" />
                   </a>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                  <a href="#" target="_blank" className="text-gray-300 hover:text-white transition-colors">
                     <Linkedin className="w-5 h-5" />
                   </a>
                 </div>
@@ -150,15 +149,27 @@ function App() {
               <h2 className="text-3xl font-bold text-white mb-6">Projects</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="p-6 bg-white/5 rounded-lg">
-                  <h3 className="text-xl font-semibold text-white mb-4">Web Development</h3>
+                  <h3 className="text-xl font-semibold text-white mb-4">Centralized SSO (Keycloak)</h3>
                   <p className="text-gray-200">
-                    Custom web applications built with the latest technologies and best practices.
+                    Implemented a secure Single Sign-On (SSO) solution using Keycloak, enhancing user authentication and access management across company applications.
                   </p>
                 </div>
                 <div className="p-6 bg-white/5 rounded-lg">
-                  <h3 className="text-xl font-semibold text-white mb-4">UI/UX Design</h3>
+                  <h3 className="text-xl font-semibold text-white mb-4">Automated Contract Acceptance (DocuSign Integration)</h3>
                   <p className="text-gray-200">
-                    Beautiful and intuitive interfaces that enhance user experience.
+                    Streamlined contract workflows by integrating DocuSign, automating acceptance processes and reducing manual effort.
+                  </p>
+                </div>
+                <div className="p-6 bg-white/5 rounded-lg">
+                  <h3 className="text-xl font-semibold text-white mb-4">CICD Pipeline Automation</h3>
+                  <p className="text-gray-200">
+                    Developed and implemented a robust CI/CD pipeline using GitHub Actions and AWS, enabling rapid and reliable deployments for a new startup.
+                  </p>
+                </div>
+                <div className="p-6 bg-white/5 rounded-lg">
+                  <h3 className="text-xl font-semibold text-white mb-4">Application Platform & Mobile App Development</h3>
+                  <p className="text-gray-200">
+                    Led the redevelopment of the company's online insurance application platform and created a mobile application for agents, enhancing accessibility and sales efficiency.
                   </p>
                 </div>
               </div>
@@ -171,18 +182,25 @@ function App() {
               <h2 className="text-3xl font-bold text-white mb-6">Blog</h2>
               <div className="space-y-8">
                 <article className="border-b border-white/10 pb-8">
-                  <h3 className="text-xl font-semibold text-white mb-4">Latest in Web Development</h3>
+                  <h3 className="text-xl font-semibold text-white mb-4">Quickly create a .Net 6 minimal API with swagger documentation</h3>
                   <p className="text-gray-200 mb-4">
-                    Exploring the newest trends and technologies in modern web development.
+                    Guide to rapidly building a .NET 6 Minimal API with integrated Swagger documentation for efficient development and testing.
                   </p>
-                  <a href="#" className="text-blue-400 hover:text-blue-300 transition-colors">Read more →</a>
+                  <a href="https://medium.com/@gerhardmaree/quickly-create-a-net-6-minimal-api-with-swagger-documentation-720d88db79fb" target="_blank" className="text-blue-400 hover:text-blue-300 transition-colors">Read more →</a>
                 </article>
                 <article className="border-b border-white/10 pb-8">
-                  <h3 className="text-xl font-semibold text-white mb-4">Design Systems</h3>
+                  <h3 className="text-xl font-semibold text-white mb-4">Route handler filters with .Net 7 preview 3</h3>
                   <p className="text-gray-200 mb-4">
-                    Creating cohesive and scalable design systems for modern applications.
+                    Exploring and implementing route handler filters in .NET 7 Preview 3 for enhanced request processing and validation
                   </p>
-                  <a href="#" className="text-blue-400 hover:text-blue-300 transition-colors">Read more →</a>
+                  <a href="https://medium.com/@gerhardmaree/route-handler-filters-with-net-7-preview-3-fd98126a3fbb" target="_blank" className="text-blue-400 hover:text-blue-300 transition-colors">Read more →</a>
+                </article>
+                <article className="border-b border-white/10 pb-8">
+                  <h3 className="text-xl font-semibold text-white mb-4">C# Source Generators (Metaprogramming)</h3>
+                  <p className="text-gray-200 mb-4">
+                    An introduction to C# Source Generators, demonstrating how to automate code generation and enhance development efficiency through metaprogramming.
+                  </p>
+                  <a href="https://medium.com/@gerhardmaree/c-source-generators-metaprogramming-ce014c1744aa" target="_blank" className="text-blue-400 hover:text-blue-300 transition-colors">Read more →</a>
                 </article>
               </div>
             </div>
