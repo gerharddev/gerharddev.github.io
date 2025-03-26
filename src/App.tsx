@@ -118,7 +118,7 @@ function App() {
       <main className="relative z-10 pt-10 px-4 flex-grow">
         <div className="max-w-7xl mx-auto">
           {/* Home Section */}
-          <section id="home" className="min-h-screen flex items-center justify-center">
+          <section id="home" className="min-h-screen flex items-center justify-center pt-16 md:pt-0">
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-8 shadow-xl w-full max-w-5xl">
               <div className="text-center">
                 <h1 className="text-5xl font-bold text-white mb-8">Hi! I'm Gerhard</h1>
