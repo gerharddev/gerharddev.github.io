@@ -19,7 +19,7 @@ function App() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      const navOffset = 100; // Account for fixed navbar
+      const navOffset = window.innerWidth < 768 ? 50 : 100; // Smaller offset for mobile
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - navOffset;
 
@@ -145,7 +145,7 @@ function App() {
           </section>
 
           {/* Projects Section */}
-          <section id="projects" className="min-h-screen py-20">
+          <section id="projects" className="min-h-screen pt-10 md:pt-10">
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-8 shadow-xl">
               <h2 className="text-3xl font-bold text-white mb-6">Projects</h2>
               <div className="grid md:grid-cols-2 gap-6">
@@ -178,7 +178,7 @@ function App() {
           </section>
 
           {/* Blog Section */}
-          <section id="blog" className="min-h-screen py-20">
+          <section id="blog" className="min-h-screen pt-10 md:pt-10">
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-8 shadow-xl">
               <h2 className="text-3xl font-bold text-white mb-6">Blog</h2>
               <div className="space-y-8">
