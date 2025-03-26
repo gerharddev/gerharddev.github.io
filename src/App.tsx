@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin } from 'lucide-react';
-import backgroundImg from './assets/background03.jpg';
+import backgroundImg from './assets/modernbio05.png';
 import avatarImg from './assets/avatar.png';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      const navOffset = 100; // Account for fixed navbar
+      const navOffset = window.innerWidth < 768 ? 50 : 100; // Smaller offset for mobile
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - navOffset;
 
@@ -43,13 +43,12 @@ function App() {
           backgroundAttachment: 'fixed'
         }}
       >
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
+        <div className="absolute inset-0 bg-black/40"></div> {/* Removed backdrop-blur */}
       </div>
 
       {/* Floating Navbar */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'
-        }`}>
-        <div className={`mx-auto max-w-7xl px-8 transition-all duration-300 border-2 border-gray-700 bg-gray-900/60 backdrop-blur-md shadow-lg ${isMobileMenuOpen ? 'rounded-2xl' : 'rounded-full'}`}>
+      <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
+        <div className={`mx-auto max-w-7xl px-8 border-2 border-gray-700 bg-gray-900/60 backdrop-blur-md shadow-lg ${isMobileMenuOpen ? 'rounded-2xl' : 'rounded-full'}`}>
           <div className="flex items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
@@ -119,7 +118,7 @@ function App() {
       <main className="relative z-10 pt-10 px-4 flex-grow">
         <div className="max-w-7xl mx-auto">
           {/* Home Section */}
-          <section id="home" className="min-h-screen flex items-center justify-center">
+          <section id="home" className="min-h-screen flex items-center justify-center pt-16 md:pt-0">
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-8 shadow-xl w-full max-w-5xl">
               <div className="text-center">
                 <h1 className="text-5xl font-bold text-white mb-8">Hi! I'm Gerhard</h1>
@@ -146,7 +145,7 @@ function App() {
           </section>
 
           {/* Projects Section */}
-          <section id="projects" className="min-h-screen py-20">
+          <section id="projects" className="min-h-screen pt-10 md:pt-10">
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-8 shadow-xl">
               <h2 className="text-3xl font-bold text-white mb-6">Projects</h2>
               <div className="grid md:grid-cols-2 gap-6">
@@ -179,7 +178,7 @@ function App() {
           </section>
 
           {/* Blog Section */}
-          <section id="blog" className="min-h-screen py-20">
+          <section id="blog" className="min-h-screen pt-10 md:pt-10">
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-8 shadow-xl">
               <h2 className="text-3xl font-bold text-white mb-6">Blog</h2>
               <div className="space-y-8">
