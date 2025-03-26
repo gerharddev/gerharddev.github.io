@@ -47,9 +47,8 @@ function App() {
       </div>
 
       {/* Floating Navbar */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'
-        }`}>
-        <div className={`mx-auto max-w-7xl px-8 transition-all duration-300 border-2 border-gray-700 bg-gray-900/60 backdrop-blur-md shadow-lg ${isMobileMenuOpen ? 'rounded-2xl' : 'rounded-full'}`}>
+      <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
+        <div className={`mx-auto max-w-7xl px-8 border-2 border-gray-700 bg-gray-900/60 backdrop-blur-md shadow-lg ${isMobileMenuOpen ? 'rounded-2xl' : 'rounded-full'}`}>
           <div className="flex items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
