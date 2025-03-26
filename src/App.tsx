@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin } from 'lucide-react';
-import backgroundImg from './assets/background03.jpg';
+import backgroundImg from './assets/modernbio05.png';
 import avatarImg from './assets/avatar.png';
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
           backgroundAttachment: 'fixed'
         }}
       >
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
+        <div className="absolute inset-0 bg-black/40"></div> {/* Removed backdrop-blur */}
       </div>
 
       {/* Floating Navbar */}
