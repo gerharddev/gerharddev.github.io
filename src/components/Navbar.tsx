@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaLinkedin,FaGithub } from "react-icons/fa"; 
 import "./Navbar.css";
-import avatar from "../../assets/avatar.png";
+import avatar from "../../assets/g_hoodie_off_tr.png";
 
 const Navbar: React.FC = () => {
   return (

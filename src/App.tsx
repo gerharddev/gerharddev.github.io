@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin } from 'lucide-react';
 import backgroundImg from './assets/modernbio05.png';
-import avatarImg from './assets/avatar.png';
+import avatarImg from './assets/g_hoodie_off_tr.png';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
